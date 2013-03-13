@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 using Twilio;
 namespace TwilioRouter.Controllers
 {
@@ -18,14 +19,14 @@ namespace TwilioRouter.Controllers
             options.To = "+17202808698";
             options.From = "+17202591415";
             var call = twilio.InitiateOutboundCall(options);
-
+            Response.Write(options.Url);
             //Console.WriteLine(call.Sid);
             return View();
         }
 
         public ActionResult SMSInstructions()
         {
-            ViewBag.Message = Request["Message"];
+            ViewBag.Message = HttpUtility.UrlDecode(Request["Message"]);
             return View();
         }
     }
