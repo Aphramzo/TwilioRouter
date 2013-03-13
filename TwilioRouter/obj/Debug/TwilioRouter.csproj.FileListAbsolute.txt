@@ -1,0 +1,14 @@
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\TwilioRouter.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\TwilioRouter.pdb
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\EntityFramework.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\Newtonsoft.Json.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\RestSharp.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\Twilio.Api.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\EntityFramework.xml
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\Newtonsoft.Json.xml
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\RestSharp.xml
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\Twilio.Api.pdb
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\bin\Twilio.Api.xml
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\obj\Debug\ResolveAssemblyReference.cache
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\obj\Debug\TwilioRouter.dll
+c:\users\aphramzo\Projects\TwilioRouter\TwilioRouter\obj\Debug\TwilioRouter.pdb
