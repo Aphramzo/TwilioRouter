@@ -10,7 +10,7 @@ namespace TwilioRouter.Controllers
         public ActionResult SMS()
         {
             string AccountSid = "AC466fd9c5fb1ec783e26fd56c3b25970b";
-            string AuthToken = "{{ auth_token }}";
+            string AuthToken = "896c359e5a927cbddc2a38d36f1a264c";
             var twilio = new TwilioRestClient(AccountSid, AuthToken);
 
             var options = new CallOptions();
