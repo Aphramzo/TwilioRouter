@@ -14,7 +14,7 @@ namespace TwilioRouter.Controllers
             var twilio = new TwilioRestClient(AccountSid, AuthToken);
 
             var options = new CallOptions();
-            options.Url = "http://demo.twilio.com/docs/voice.xml";
+            options.Url = Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + "/Route/SMSInstructions?Message=" + Request["Body"];
             options.To = "+17202808698";
             options.From = "+17202591415";
             var call = twilio.InitiateOutboundCall(options);
@@ -23,5 +23,10 @@ namespace TwilioRouter.Controllers
             return View();
         }
 
+        public ActionResult SMSInstructions()
+        {
+            ViewBag.Message = Request["Message"];
+            return View();
+        }
     }
 }
