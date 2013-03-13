@@ -15,11 +15,11 @@ namespace TwilioRouter.Controllers
             var twilio = new TwilioRestClient(AccountSid, AuthToken);
 
             var options = new CallOptions();
-            options.Url = Request.Url.Scheme + System.Uri.SchemeDelimiter + Request.Url.Host + (Request.Url.IsDefaultPort ? "" : ":" + Request.Url.Port) + "/Route/SMSInstructions?Message=" + Request["Body"];
+            options.Url = "http://twiliorouter.apphb.com/Route/SMSInstructions?Message=" + Request["Body"];
             options.To = "+17202808698";
             options.From = "+17202591415";
             var call = twilio.InitiateOutboundCall(options);
-            Response.Write(options.Url);
+            //Response.Write(options.Url);
             //Console.WriteLine(call.Sid);
             return View();
         }
