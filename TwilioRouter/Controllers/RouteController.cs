@@ -16,7 +16,8 @@ namespace TwilioRouter.Controllers
 
             var options = new CallOptions();
             options.Url = "http://twiliorouter.apphb.com/Route/SMSInstructions?Message=" + HttpUtility.UrlEncode(Request["Body"]);
-            options.To = "+17202808698";
+            //options.To = "+17202808698";
+            options.To = Request["From"];
             options.From = "+17202591415";
             var call = twilio.InitiateOutboundCall(options);
             //Response.Write(options.Url);
